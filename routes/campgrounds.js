@@ -76,7 +76,6 @@ router.put("/:id", middleware.checkCampgroundOwnership, function (req, res) {
             res.redirect("/campgrounds/" + req.params.id);
         }
     })
-
 })
 
 // DESTROY CAMPGROUND ROUTE
@@ -90,7 +89,6 @@ router.delete("/:id", middleware.checkCampgroundOwnership, function (req, res) {
         }
     })
 })
-
 
 module.exports = router;
 

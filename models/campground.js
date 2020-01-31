@@ -19,7 +19,6 @@ var campgroundSchema = new mongoose.Schema({
         }
     ]
 });
-
 //compiles the schema and allows methods etc to be used
 //this is what we get when we require in the app.js file
 module.exports = mongoose.model("Campground", campgroundSchema);
